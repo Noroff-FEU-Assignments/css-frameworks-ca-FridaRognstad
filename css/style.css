@@ -1,2 +1,6 @@
+main {
+  background: var(--background-colour);
+}
+
 @import "_variables.css";
 @import "_navbar.css";
