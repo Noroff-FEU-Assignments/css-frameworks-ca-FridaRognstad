@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The YAY Company | Home</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400;1,700&display=swap"
       rel="stylesheet"
@@ -25,10 +18,12 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">The YAY Company</a>
+        <div class="container-fluid navbar__content">
+          <a class="navbar-brand navbar__brand" href="index.html"
+            >The YAY Company</a
+          >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler navbar__btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -36,84 +31,98 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon navbar__burger"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list">
+              <li class="nav-item navbar__item">
+                <a
+                  class="nav-link active navbar__link navbar__link--active"
+                  aria-current="page"
+                  href="index.html"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
+              <li class="nav-item navbar__item">
+                <a class="nav-link navbar__link" href="news.html">News</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li class="nav-item navbar__item">
+                <a class="nav-link navbar__link" href="contact.html">Contact</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex search-form">
               <input
-                class="form-control me-2"
+                class="form-control search-form__input"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">Go</button>
+              <button
+                class="btn btn-outline-success search-form__btn"
+                type="submit"
+                >Go</button
+              >
             </form>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="Carousel images/carousel-2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+      <div class="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators carousel__indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active carousel__btn carousel__btn--active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              class="carousel__btn"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              class="carousel__btn"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <div class="carousel-item">
-            <img
-              src="Carousel images/carousel-1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="Carousel images/carousel-3.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active carousel__item carousel__item--active"
+            >
+              <img
+                src="Carousel images/carousel-2.jpg"
+                class="d-block w-100 carousel__img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item carousel__item">
+              <img
+                src="Carousel images/carousel-1.jpg"
+                class="d-block w-100 carousel__img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item carousel__item">
+              <img
+                src="Carousel images/carousel-3.jpg"
+                class="d-block w-100 carousel__img"
+                alt="..."
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -130,13 +139,13 @@
         >
       </div>
 
-      <div class="container">
+      <div class="container accordion__container">
         <div class="d-md-none">
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
+            <div class="accordion-item accordion__item">
+              <h2 class="accordion-header accordion__header" id="headingOne">
                 <button
-                  class="accordion-button"
+                  class="accordion-button accordion__button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
@@ -148,103 +157,128 @@
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse show accordion__collapse"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <div class="row">
-                    <img src="/Tab images/tab-1.jpg" alt="" class="col-sm" />
-                    <div class="col-md">
-                      <p
-                        >Morbi eget efficitur turpis. Vivamus pellentesque
-                        tortor massa, venenatis pharetra leo laoreet a. Nullam
-                        non eleifend justo, a ullamcorper turpis. Cras vehicula
-                        pharetra lectus non maximus. Sed condimentum mattis
-                        rhoncus.</p
-                      >
-                      <p>Share</p>
-                      <i class="fab fa-facebook-f"></i>
-                      <i class="fab fa-twitter"></i>
-                    </div>
+                <div
+                  class="
+                    accordion-body
+                    border-top border-primary
+                    accordion__body
+                  "
+                >
+                  <p class="accordion__body--p"
+                    >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.</p
+                  >
+                  <img
+                    src="/Tab images/tab-1.jpg"
+                    alt=""
+                    class="img-fluid accordion__body--img"
+                  />
+                  <div class="accordion__body--links">
+                    <a href="#">SHARE</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Second
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
+          </div>
+          <div class="accordion-item accordion__item">
+            <h2 class="accordion-header accordion__header" id="headingTwo">
+              <button
+                class="accordion-button accordion__button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
               >
-                <div class="accordion-body">
-                  <img src="/Tab images/tab-2.jpg" alt="" />
-                  <p
-                    >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
-                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
-                    non maximus. Sed condimentum mattis rhoncus.</p
-                  >
-                  <p>Share</p>
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-twitter"></i>
+                Second
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse accordion__collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div
+                class="accordion-body border-top border-primary accordion__body"
+              >
+                <p class="accordion__body--p"
+                  >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                  massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                  justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.</p
+                >
+                <img
+                  src="/Tab images/tab-2.jpg"
+                  alt=""
+                  class="img-fluid accordion__body--img"
+                />
+                <div class="accordion__body--links">
+                  <a href="#">SHARE</a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Third
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
+          </div>
+          <div class="accordion-item accordion__item">
+            <h2 class="accordion-header accordion__header" id="headingThree">
+              <button
+                class="accordion-button collapsed accordion__button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
               >
-                <div class="accordion-body">
-                  <img src="/Tab images/tab-3.jpg" alt="" />
-                  <p
-                    >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
-                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
-                    non maximus. Sed condimentum mattis rhoncus.</p
-                  >
-                  <p>Share</p>
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-twitter"></i>
+                Third
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse accordion__collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div
+                class="accordion-body border-top border-primary accordion__body"
+              >
+                <p class="accordion__body--p"
+                  >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                  massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                  justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.</p
+                >
+                <img
+                  src="/Tab images/tab-3.jpg"
+                  alt=""
+                  class="img-fluid accordion__body--img"
+                />
+                <div class="accordion__body--links">
+                  <a href="#">SHARE</a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="container tabs__container">
         <div class="d-none d-md-block">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
+          <ul class="nav nav-tabs tabs" id="myTab" role="tablist">
+            <li class="nav-item tabs__item" role="presentation">
               <button
-                class="nav-link active"
+                class="nav-link active tabs__link tabs__link--active"
                 id="first-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#first"
@@ -255,9 +289,9 @@
                 >First</button
               >
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item tabs__item" role="presentation">
               <button
-                class="nav-link"
+                class="nav-link tabs__link"
                 id="second-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#second"
@@ -268,9 +302,9 @@
                 >Second</button
               >
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item tabs__item" role="presentation">
               <button
-                class="nav-link"
+                class="nav-link tabs__link"
                 id="third-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#third"
@@ -282,40 +316,71 @@
               >
             </li>
           </ul>
-          <div class="tab-content" id="myTabContent">
+          <div class="tab-content tabs__content" id="myTabContent">
             <div
               class="tab-pane fade show active"
               id="first"
               role="tabpanel"
               aria-labelledby="first-tab"
             >
-              <img src="/Tab images/tab-1.jpg" alt="" />
-              <p
-                >Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
-                venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
-                ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
-                Sed condimentum mattis rhoncus.
-              </p>
-              <p>Share</p>
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i
-            ></div>
+              <div class="card-body shadow p-3 mb-5 bg-body rounded tabs__card">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="/Tab images/tab-1.jpg"
+                      alt=""
+                      class="img-fluid tabs__content--img"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <p class="tabs__content--p"
+                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                      massa, venenatis pharetra leo laoreet a. Nullam non
+                      eleifend justo, a ullamcorper turpis. Cras vehicula
+                      pharetra lectus non maximus. Sed condimentum mattis
+                      rhoncus.
+                    </p>
+                    <div class="tabs__content--links">
+                      <a href="#">SHARE</a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               class="tab-pane fade"
               id="second"
               role="tabpanel"
               aria-labelledby="second-tab"
             >
-              <img src="/Tab images/tab-2.jpg" alt="" />
-              <p
-                >Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
-                venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
-                ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
-                Sed condimentum mattis rhoncus.
-              </p>
-              <p>Share</p>
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
+              <div class="card-body shadow p-3 mb-5 bg-body rounded tabs__card">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="/Tab images/tab-2.jpg"
+                      alt=""
+                      class="img-fluid tabs__content--img"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <p class="tabs__content--p"
+                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                      massa, venenatis pharetra leo laoreet a. Nullam non
+                      eleifend justo, a ullamcorper turpis. Cras vehicula
+                      pharetra lectus non maximus. Sed condimentum mattis
+                      rhoncus.
+                    </p>
+                    <p>Share</p>
+                    <div class="tabs__content--links">
+                      <a href="#">SHARE</a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
               class="tab-pane fade"
@@ -323,16 +388,31 @@
               role="tabpanel"
               aria-labelledby="third-tab"
             >
-              <img src="/Tab images/tab-3.jpg" alt="" />
-              <p
-                >Morbi eget efficitur turpis. Vivamus pellentesque tortor massa,
-                venenatis pharetra leo laoreet a. Nullam non eleifend justo, a
-                ullamcorper turpis. Cras vehicula pharetra lectus non maximus.
-                Sed condimentum mattis rhoncus.
-              </p>
-              <p>Share</p>
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
+              <div class="card-body shadow p-3 mb-5 bg-body rounded tabs__card">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="/Tab images/tab-3.jpg"
+                      alt=""
+                      class="img-fluid tabs__content--img"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <p class="tabs__content--p"
+                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                      massa, venenatis pharetra leo laoreet a. Nullam non
+                      eleifend justo, a ullamcorper turpis. Cras vehicula
+                      pharetra lectus non maximus. Sed condimentum mattis
+                      rhoncus.
+                    </p>
+                    <div class="tabs__content--links">
+                      <a href="#">SHARE</a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
