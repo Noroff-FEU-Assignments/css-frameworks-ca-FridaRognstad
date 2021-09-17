@@ -1,0 +1,71 @@
+.form {
+  &__card {
+    background-color: $light;
+    border-radius: 3px;
+  }
+
+  &__input {
+    border: none;
+    padding: 10px 4px;
+  }
+
+  &__label {
+    color: $gray;
+    font-size: 20px;
+  }
+
+  &__item {
+    border: none;
+    background-color: #c7c7c7;
+    color: $white;
+  }
+
+  &__check {
+    height: 60px;
+
+    &--box {
+      background-color: $primary;
+      border: $primary;
+      color: $white;
+      height: 20px;
+      width: 20px;
+      padding: 12px;
+    }
+
+    &--label {
+      margin-left: 10px;
+      color: $gray;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    font-weight: 700;
+  }
+}
+
+.contact-list {
+  &__item {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    &--address {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--icon {
+      font-size: 30px;
+      color: $gray;
+      margin-right: 20px;
+    }
+  }
+
+  &__item p {
+    margin: 0;
+  }
+}
