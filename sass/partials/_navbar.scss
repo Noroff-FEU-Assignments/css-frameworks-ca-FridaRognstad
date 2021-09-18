@@ -3,17 +3,23 @@
 
   &__btn {
     border: none;
+    outline: none;
   }
 
   &__link {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 10px 0;
 
     &--active {
       background-color: $white;
       width: 100%;
     }
   }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  box-shadow: none;
 }
 
 .search-form {

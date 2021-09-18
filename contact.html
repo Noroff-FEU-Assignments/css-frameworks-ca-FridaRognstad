@@ -16,154 +16,163 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid navbar__content">
-          <a class="navbar-brand navbar__brand" href="index.html"
-            >The YAY Company</a
-          >
-          <button
-            class="navbar-toggler navbar__btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon navbar__burger"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list">
-              <li class="nav-item navbar__item">
-                <a class="nav-link navbar__link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item navbar__item">
-                <a class="nav-link navbar__link" href="news.html">News</a>
-              </li>
-              <li class="nav-item navbar__item">
-                <a
-                  class="nav-link active navbar__link navbar__link--active"
-                  aria-current="page"
-                  href="contact.html"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex search-form">
-              <input
-                class="form-control search-form__input"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-primary search-form__btn" type="submit"
-                >Go</button
-              >
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="container">
-        <h1>Submit your details</h1>
-        <div class="row">
-          <div class="col-md order-md-2">
-            <ul class="list-group contact-list">
-              <li class="list-group-item contact-list__item"
-                ><i class="fas fa-envelope contact-list__item--icon"></i
-                ><p class="contact-list__item--email">hello@yay.com</p></li
-              >
-              <li class="list-group-item contact-list__item"
-                ><i class="fas fa-phone contact-list__item--icon"></i
-                ><p class="contact-list__item--phone">123 456 7890</p></li
-              >
-              <li class="list-group-item contact-list__item"
-                ><i class="fas fa-map-marker-alt contact-list__item--icon"></i>
-                <div class="contact-list__item--address">
-                  <p>123 Some Street</p>
-                  <p>Somewhere</p>
-                  <p>Some City</p>
-                  <p>10000</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md order-md-1">
-            <div class="card-body p-4 form__card">
-              <form class="form">
-                <div class="mb-3">
-                  <label for="name" class="form-label form__label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control form__input"
-                    id="name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label form__label"
-                    >Email</label
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid navbar__content">
+            <a class="navbar-brand navbar__brand" href="index.html"
+              >The YAY Company</a
+            >
+            <button
+              class="navbar-toggler navbar__btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon navbar__burger"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list">
+                <li class="nav-item navbar__item">
+                  <a class="nav-link navbar__link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item navbar__item">
+                  <a class="nav-link navbar__link" href="news.html">News</a>
+                </li>
+                <li class="nav-item navbar__item">
+                  <a
+                    class="nav-link active navbar__link navbar__link--active"
+                    aria-current="page"
+                    href="contact.html"
+                    >Contact</a
                   >
-                  <input
-                    type="email"
-                    class="form-control form__input"
-                    id="email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="website" class="form-label form__label"
-                    >Website</label
-                  >
-                  <div class="input-group">
-                    <div class="input-group-text form__item">https://</div>
-                    <input
-                      type="url"
-                      class="form-control form__input"
-                      id="website"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label form__label"
-                    >Message</label
-                  >
-                  <textarea
-                    class="form-control form__input"
-                    id="message"
-                    rows="5"
-                  ></textarea>
-                </div>
-
-                <div class="mb-3 form-check form__check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input form__check--box"
-                    id="personal"
-                  />
-                  <label
-                    class="form-check-label form__check--label"
-                    for="personal"
-                    >Allow us to sell your personal details to whomever we
-                    want</label
-                  >
-                </div>
-                <button type="submit" class="btn btn-secondary form__btn"
-                  >Submit</button
+                </li>
+              </ul>
+              <form class="d-flex search-form">
+                <input
+                  class="form-control search-form__input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary search-form__btn" type="submit"
+                  >Go</button
                 >
               </form>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </nav>
+      </header>
 
-    <footer>
-      <div><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i></div>
-      <div>hello@yay.com</div>
-      <div>Copyright 2020</div>
+      <main>
+        <div class="container">
+          <h1>Submit your details</h1>
+          <div class="row">
+            <div class="col-md order-md-2">
+              <ul class="list-group contact-list">
+                <li class="list-group-item contact-list__item"
+                  ><i class="fas fa-envelope contact-list__item--icon"></i
+                  ><p class="contact-list__item--email">hello@yay.com</p></li
+                >
+                <li class="list-group-item contact-list__item"
+                  ><i class="fas fa-phone contact-list__item--icon"></i
+                  ><p class="contact-list__item--phone">123 456 7890</p></li
+                >
+                <li class="list-group-item contact-list__item"
+                  ><i
+                    class="fas fa-map-marker-alt contact-list__item--icon"
+                  ></i>
+                  <div class="contact-list__item--address">
+                    <p>123 Some Street</p>
+                    <p>Somewhere</p>
+                    <p>Some City</p>
+                    <p>10000</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md order-md-1">
+              <div class="card-body shadow p-4 form__card">
+                <form class="form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label form__label"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form__input"
+                      id="name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label form__label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form__input"
+                      id="email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="website" class="form-label form__label"
+                      >Website</label
+                    >
+                    <div class="input-group">
+                      <div class="input-group-text form__item">https://</div>
+                      <input
+                        type="url"
+                        class="form-control form__input"
+                        id="website"
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label form__label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control form__input"
+                      id="message"
+                      rows="5"
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3 form-check form__check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input form__check--box"
+                      id="personal"
+                    />
+                    <label
+                      class="form-check-label form__check--label"
+                      for="personal"
+                      >Allow us to sell your personal details to whomever we
+                      want</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-secondary form__btn"
+                    >Submit</button
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__icons"
+          ><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i
+        ></div>
+        <div class="footer__mail">hello@yay.com</div>
+        <div class="footer__copyright">Copyright 2020</div>
+      </div>
     </footer>
 
     <script

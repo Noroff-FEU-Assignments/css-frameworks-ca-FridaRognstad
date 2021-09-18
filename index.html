@@ -16,147 +16,194 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid navbar__content">
-          <a class="navbar-brand navbar__brand" href="index.html"
-            >The YAY Company</a
-          >
-          <button
-            class="navbar-toggler navbar__btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon navbar__burger"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list">
-              <li class="nav-item navbar__item">
-                <a
-                  class="nav-link active navbar__link navbar__link--active"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item navbar__item">
-                <a class="nav-link navbar__link" href="news.html">News</a>
-              </li>
-              <li class="nav-item navbar__item">
-                <a class="nav-link navbar__link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex search-form">
-              <input
-                class="form-control search-form__input"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-primary search-form__btn" type="submit"
-                >Go</button
-              >
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="carousel">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators carousel__indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active carousel__btn carousel__btn--active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              class="carousel__btn"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              class="carousel__btn"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div
-              class="carousel-item active carousel__item carousel__item--active"
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid navbar__content">
+            <a class="navbar-brand navbar__brand" href="index.html"
+              >The YAY Company</a
             >
-              <img
-                src="Carousel images/carousel-2.jpg"
-                class="d-block w-100 carousel__img"
-                alt="..."
-              />
+            <button
+              class="navbar-toggler navbar__btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon navbar__burger"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list">
+                <li class="nav-item navbar__item">
+                  <a
+                    class="nav-link active navbar__link navbar__link--active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item navbar__item">
+                  <a class="nav-link navbar__link" href="news.html">News</a>
+                </li>
+                <li class="nav-item navbar__item">
+                  <a class="nav-link navbar__link" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex search-form">
+                <input
+                  class="form-control search-form__input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary search-form__btn" type="submit"
+                  >Go</button
+                >
+              </form>
             </div>
-            <div class="carousel-item carousel__item">
-              <img
-                src="Carousel images/carousel-1.jpg"
-                class="d-block w-100 carousel__img"
-                alt="..."
-              />
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="carousel">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators carousel__indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active carousel__btn carousel__btn--active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                class="carousel__btn"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                class="carousel__btn"
+                aria-label="Slide 3"
+              ></button>
             </div>
-            <div class="carousel-item carousel__item">
-              <img
-                src="Carousel images/carousel-3.jpg"
-                class="d-block w-100 carousel__img"
-                alt="..."
-              />
+            <div class="carousel-inner">
+              <div
+                class="
+                  carousel-item
+                  active
+                  carousel__item carousel__item--active
+                "
+                style="background-image: url(images/carousel/carousel-1.jpg)"
+              ></div>
+              <div
+                class="carousel-item carousel__item"
+                style="background-image: url(images/carousel/carousel-2.jpg)"
+              >
+              </div>
+              <div
+                class="carousel-item carousel__item"
+                style="background-image: url(images/carousel/carousel-3.jpg)"
+              >
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="container">
-        <h1>We do YAY things</h1>
-        <p
-          >Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi,
-          a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend
-          finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet,
-          consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa
-          euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus
-          a, varius eget massa.</p
-        >
-      </div>
+        <div class="container">
+          <div class="index-box">
+            <h1>We do YAY things</h1>
+            <p
+              >Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper
+              mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris
+              eleifend finibus et ac orci. Aliquam metus massa, aliquam quis
+              arcu sit amet, consectetur faucibus urna. Suspendisse massa diam,
+              efficitur eu massa euismod, pretium lacinia magna. Donec mi orci,
+              sollicitudin in luctus a, varius eget massa.</p
+            >
+          </div>
+        </div>
 
-      <div class="container accordion__container">
-        <div class="d-md-none">
-          <div class="accordion" id="accordionExample">
+        <div class="container accordion__container">
+          <div class="d-md-none shadow">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item accordion__item">
+                <h2 class="accordion-header accordion__header" id="headingOne">
+                  <button
+                    class="accordion-button accordion__button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    First
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show accordion__collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div
+                    class="
+                      accordion-body
+                      border-top border-primary
+                      accordion__body
+                    "
+                  >
+                    <p class="accordion__body--p"
+                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                      massa, venenatis pharetra leo laoreet a. Nullam non
+                      eleifend justo, a ullamcorper turpis. Cras vehicula
+                      pharetra lectus non maximus. Sed condimentum mattis
+                      rhoncus.</p
+                    >
+                    <img
+                      src="images/tab/tab-1.jpg"
+                      alt="retro television"
+                      class="img-fluid accordion__body--img"
+                    />
+                    <div class="tabs__content--links">
+                      <a href="#">SHARE</a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="accordion-item accordion__item">
-              <h2 class="accordion-header accordion__header" id="headingOne">
+              <h2 class="accordion-header accordion__header" id="headingTwo">
                 <button
-                  class="accordion-button accordion__button"
+                  class="accordion-button accordion__button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
                 >
-                  First
+                  Second
                 </button>
               </h2>
               <div
-                id="collapseOne"
-                class="accordion-collapse collapse show accordion__collapse"
-                aria-labelledby="headingOne"
+                id="collapseTwo"
+                class="accordion-collapse collapse accordion__collapse"
+                aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
                 <div
@@ -173,11 +220,56 @@
                     non maximus. Sed condimentum mattis rhoncus.</p
                   >
                   <img
-                    src="/Tab images/tab-1.jpg"
-                    alt=""
+                    src="images/tab/tab-2.jpg"
+                    alt="paintings on brown wall"
                     class="img-fluid accordion__body--img"
                   />
-                  <div class="accordion__body--links">
+                  <div class="tabs__content--links">
+                    <a href="#">SHARE</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion__item">
+              <h2 class="accordion-header accordion__header" id="headingThree">
+                <button
+                  class="accordion-button collapsed accordion__button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Third
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse accordion__collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="
+                    accordion-body
+                    border-top border-primary
+                    accordion__body
+                  "
+                >
+                  <p class="accordion__body--p"
+                    >Morbi eget efficitur turpis. Vivamus pellentesque tortor
+                    massa, venenatis pharetra leo laoreet a. Nullam non eleifend
+                    justo, a ullamcorper turpis. Cras vehicula pharetra lectus
+                    non maximus. Sed condimentum mattis rhoncus.</p
+                  >
+                  <img
+                    src="images/tab/tab-3.jpg"
+                    alt="window on rusty wall"
+                    class="img-fluid accordion__body--img"
+                  />
+                  <div class="tabs__content--links">
                     <a href="#">SHARE</a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -186,227 +278,151 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item accordion__item">
-            <h2 class="accordion-header accordion__header" id="headingTwo">
-              <button
-                class="accordion-button accordion__button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Second
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse accordion__collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div
-                class="accordion-body border-top border-primary accordion__body"
-              >
-                <p class="accordion__body--p"
-                  >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                  massa, venenatis pharetra leo laoreet a. Nullam non eleifend
-                  justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
-                  maximus. Sed condimentum mattis rhoncus.</p
-                >
-                <img
-                  src="/Tab images/tab-2.jpg"
-                  alt=""
-                  class="img-fluid accordion__body--img"
-                />
-                <div class="accordion__body--links">
-                  <a href="#">SHARE</a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item accordion__item">
-            <h2 class="accordion-header accordion__header" id="headingThree">
-              <button
-                class="accordion-button collapsed accordion__button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Third
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse accordion__collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div
-                class="accordion-body border-top border-primary accordion__body"
-              >
-                <p class="accordion__body--p"
-                  >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                  massa, venenatis pharetra leo laoreet a. Nullam non eleifend
-                  justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
-                  maximus. Sed condimentum mattis rhoncus.</p
-                >
-                <img
-                  src="/Tab images/tab-3.jpg"
-                  alt=""
-                  class="img-fluid accordion__body--img"
-                />
-                <div class="accordion__body--links">
-                  <a href="#">SHARE</a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div class="container tabs__container">
-        <div class="d-none d-md-block">
-          <ul class="nav nav-tabs tabs" id="myTab" role="tablist">
-            <li class="nav-item tabs__item" role="presentation">
-              <button
-                class="nav-link active tabs__link tabs__link--active"
-                id="first-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#first"
-                type="button"
-                role="tab"
-                aria-controls="first"
-                aria-selected="true"
-                >First</button
+        <div class="container tabs__container">
+          <div class="d-none d-md-block">
+            <ul class="nav nav-tabs tabs" id="myTab" role="tablist">
+              <li class="nav-item tabs__item" role="presentation">
+                <button
+                  class="nav-link active tabs__link tabs__link--active"
+                  id="first-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#first"
+                  type="button"
+                  role="tab"
+                  aria-controls="first"
+                  aria-selected="true"
+                  >First</button
+                >
+              </li>
+              <li class="nav-item tabs__item" role="presentation">
+                <button
+                  class="nav-link tabs__link"
+                  id="second-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#second"
+                  type="button"
+                  role="tab"
+                  aria-controls="second"
+                  aria-selected="false"
+                  >Second</button
+                >
+              </li>
+              <li class="nav-item tabs__item" role="presentation">
+                <button
+                  class="nav-link tabs__link"
+                  id="third-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#third"
+                  type="button"
+                  role="tab"
+                  aria-controls="third"
+                  aria-selected="false"
+                  >Third</button
+                >
+              </li>
+            </ul>
+            <div class="tab-content tabs__content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="first"
+                role="tabpanel"
+                aria-labelledby="first-tab"
               >
-            </li>
-            <li class="nav-item tabs__item" role="presentation">
-              <button
-                class="nav-link tabs__link"
-                id="second-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#second"
-                type="button"
-                role="tab"
-                aria-controls="second"
-                aria-selected="false"
-                >Second</button
-              >
-            </li>
-            <li class="nav-item tabs__item" role="presentation">
-              <button
-                class="nav-link tabs__link"
-                id="third-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#third"
-                type="button"
-                role="tab"
-                aria-controls="third"
-                aria-selected="false"
-                >Third</button
-              >
-            </li>
-          </ul>
-          <div class="tab-content tabs__content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="first"
-              role="tabpanel"
-              aria-labelledby="first-tab"
-            >
-              <div class="card-body shadow p-3 mb-5 bg-body rounded tabs__card">
-                <div class="row">
-                  <div class="col-4">
-                    <img
-                      src="/Tab images/tab-1.jpg"
-                      alt=""
-                      class="img-fluid tabs__content--img"
-                    />
-                  </div>
-                  <div class="col-8">
-                    <p class="tabs__content--p"
-                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                      massa, venenatis pharetra leo laoreet a. Nullam non
-                      eleifend justo, a ullamcorper turpis. Cras vehicula
-                      pharetra lectus non maximus. Sed condimentum mattis
-                      rhoncus.
-                    </p>
-                    <div class="tabs__content--links">
-                      <a href="#">SHARE</a>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                <div
+                  class="card-body shadow p-3 mb-5 bg-body rounded tabs__card"
+                >
+                  <div class="row">
+                    <div class="col-4">
+                      <img
+                        src="images/tab/tab-1.jpg"
+                        alt="retro television"
+                        class="img-fluid tabs__content--img"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <p class="tabs__content--p"
+                        >Morbi eget efficitur turpis. Vivamus pellentesque
+                        tortor massa, venenatis pharetra leo laoreet a. Nullam
+                        non eleifend justo, a ullamcorper turpis. Cras vehicula
+                        pharetra lectus non maximus. Sed condimentum mattis
+                        rhoncus.
+                      </p>
+                      <div class="tabs__content--links">
+                        <a href="#">SHARE</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="second"
-              role="tabpanel"
-              aria-labelledby="second-tab"
-            >
-              <div class="card-body shadow p-3 mb-5 bg-body rounded tabs__card">
-                <div class="row">
-                  <div class="col-4">
-                    <img
-                      src="/Tab images/tab-2.jpg"
-                      alt=""
-                      class="img-fluid tabs__content--img"
-                    />
-                  </div>
-                  <div class="col-8">
-                    <p class="tabs__content--p"
-                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                      massa, venenatis pharetra leo laoreet a. Nullam non
-                      eleifend justo, a ullamcorper turpis. Cras vehicula
-                      pharetra lectus non maximus. Sed condimentum mattis
-                      rhoncus.
-                    </p>
-                    <p>Share</p>
-                    <div class="tabs__content--links">
-                      <a href="#">SHARE</a>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+              <div
+                class="tab-pane fade"
+                id="second"
+                role="tabpanel"
+                aria-labelledby="second-tab"
+              >
+                <div
+                  class="card-body shadow p-3 mb-5 bg-body rounded tabs__card"
+                >
+                  <div class="row">
+                    <div class="col-4">
+                      <img
+                        src="images/tab/tab-2.jpg"
+                        alt="paintings on brown wall"
+                        class="img-fluid tabs__content--img"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <p class="tabs__content--p"
+                        >Morbi eget efficitur turpis. Vivamus pellentesque
+                        tortor massa, venenatis pharetra leo laoreet a. Nullam
+                        non eleifend justo, a ullamcorper turpis. Cras vehicula
+                        pharetra lectus non maximus. Sed condimentum mattis
+                        rhoncus.
+                      </p>
+                      <p>Share</p>
+                      <div class="tabs__content--links">
+                        <a href="#">SHARE</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="third"
-              role="tabpanel"
-              aria-labelledby="third-tab"
-            >
-              <div class="card-body shadow p-3 mb-5 bg-body rounded tabs__card">
-                <div class="row">
-                  <div class="col-4">
-                    <img
-                      src="/Tab images/tab-3.jpg"
-                      alt=""
-                      class="img-fluid tabs__content--img"
-                    />
-                  </div>
-                  <div class="col-8">
-                    <p class="tabs__content--p"
-                      >Morbi eget efficitur turpis. Vivamus pellentesque tortor
-                      massa, venenatis pharetra leo laoreet a. Nullam non
-                      eleifend justo, a ullamcorper turpis. Cras vehicula
-                      pharetra lectus non maximus. Sed condimentum mattis
-                      rhoncus.
-                    </p>
-                    <div class="tabs__content--links">
-                      <a href="#">SHARE</a>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+              <div
+                class="tab-pane fade"
+                id="third"
+                role="tabpanel"
+                aria-labelledby="third-tab"
+              >
+                <div
+                  class="card-body shadow p-3 mb-5 bg-body rounded tabs__card"
+                >
+                  <div class="row">
+                    <div class="col-4">
+                      <img
+                        src="images/tab/tab-3.jpg"
+                        alt="window on rusty wall"
+                        class="img-fluid tabs__content--img"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <p class="tabs__content--p"
+                        >Morbi eget efficitur turpis. Vivamus pellentesque
+                        tortor massa, venenatis pharetra leo laoreet a. Nullam
+                        non eleifend justo, a ullamcorper turpis. Cras vehicula
+                        pharetra lectus non maximus. Sed condimentum mattis
+                        rhoncus.
+                      </p>
+                      <div class="tabs__content--links">
+                        <a href="#">SHARE</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -414,13 +430,16 @@
             </div>
           </div>
         </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__icons"
+          ><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i
+        ></div>
+        <div class="footer__mail">hello@yay.com</div>
+        <div class="footer__copyright">Copyright 2020</div>
       </div>
-    </main>
-
-    <footer>
-      <div><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i></div>
-      <div>hello@yay.com</div>
-      <div>Copyright 2020</div>
     </footer>
 
     <script
